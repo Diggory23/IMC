@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculadora IMC</title>
+  <!-- Bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container-lg">
+    <div class="card">
+      <div class="card-header text-center"><strong>Calculadora IMC</strong></div>
+      <div class="card-body body">
+        <form class="w-50  m-auto " onsubmit="return false">
+          <h4 id="ResponseIMC"></h4>
+          <div class="form-group">
+            <label>Peso: </label>
+            <input type="text" name="" id="weight" class="form-control" placeholder="Peso en Kg">
+          </div>
+
+          <div class="form-group">
+            <label>Altura: </label>
+            <input type="text" name="" id="height" class="form-control" placeholder="Altura en Cm">
+          </div>
+
+          <div class="form-group ">
+            <label>Indice de masa corporal: </label>
+            <input type="text" name="" id="imc" class="form-control">
+          </div>
+          <div>
+            <button type="submit" class="btn btn-success " onclick="getBmiValue()">Check BMI</button>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer text-center footer">
+        <div class="table-responsive-md">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">IMC</th>
+                <th scope="col">Estatus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td> IMC <= 18.5</td>
+                <td>Bajo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>IMC >= 18.5 y <=24.9< /td>
+                <td>Saludable</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>IMC >= 25 y <=29.9< /td>
+                <td>Sobrepeso</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>IMC >= 30 y <=34.9< /td>
+                <td>Obesidad grado 1</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>IMC >= 35 y <=39.9< /td>
+                <td>Obesidad grado 2</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>IMC >= 40</td>
+                <td>Obesidad mórbida</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

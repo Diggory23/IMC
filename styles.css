@@ -1,0 +1,31 @@
+body{
+  background-color:#91bba8;
+}
+
+form{
+  height: 250px;
+}
+
+button{
+  position: relative;
+  top:20px;
+}
+
+h4{
+  color:red;
+}
+
+.good{
+  color:#0000A0;
+}
+
+
+.body{
+  padding-bottom: 8%;
+}
+
+@media (max-width: 600px) {
+  .body{
+    padding-bottom: 20%;
+  }
+}
